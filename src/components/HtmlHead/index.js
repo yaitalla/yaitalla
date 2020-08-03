@@ -5,28 +5,30 @@ const ogURL = 'yaitalla.vercel.app/';
 
 const HtmlHead = () => (
     <Head>
-        <title>Dev Frontend React Javascript HTML CSS</title>
+        <title>Développeur Frontend React JS HTML CSS</title>
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <meta charSet="utf-8" />
        <meta
         name="description"
-        content="comment touver un bon developpeur web pas cher"
+        content="UI UX Design Dévelopement Web Mobile"
       />
 
       <meta
-        content="Developer frontend React js "
+        content="Solution Web, Responsive Design"
         key="ogtitle"
         property="og:title"
       />
       <meta property="og:type" content={ogType} key="ogtype" />
-      <meta property="og:image" content="https://i.ibb.co/bK384Gm/miniature.png" key="ogimage" />
+      <meta property="og:image" content="/netero.png" key="ogimage" />
       <meta property="og:url" content={ogURL} key="ogurl" />
       <meta
         key="description"
         property="og:description"
-        content="realiser un projet numerique, creer un site web...  "
+        content="Réaliser un projet numerique, Créer un site web"
       />
       <link rel="icon" href="/webIcon.png" />
+      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+
     </Head>
 )
 export default HtmlHead;

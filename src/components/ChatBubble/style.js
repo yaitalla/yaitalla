@@ -27,11 +27,8 @@ const appear = keyframes`
 export const Wrap = styled.div`
     display: flex;
     justify-content: center;
-    top: 38%;
-    left: 23%;
     width: 46px;
     height: 31px;
-    position: absolute;
     border-radius: 6px;
     background-color: #fff;
     box-shadow: 3px 3px 0px 0px #2A6C5A;
@@ -39,6 +36,7 @@ export const Wrap = styled.div`
     text-align: center;
     line-height: 32px;
     font-size: 2.5em;
+    transform: translateY(200%) translateX(-100%);
     animation: 4s ${appear} forwards;
     ::before{
         content: '';
@@ -50,7 +48,7 @@ export const Wrap = styled.div`
         border-right: 5px solid transparent;
         border-bottom: 5px solid transparent;
         top: 31px;
-        left: 8px;
+        right: 25px;
         z-index: 2;
     }
     ::after {
@@ -63,8 +61,11 @@ export const Wrap = styled.div`
         border-right: 6px solid transparent;
         border-bottom: 6px solid transparent;
         top: 31px;
-        left: 12px;  
+        right: 21px; 
         z-index: 1;
+    }
+    @media (max-width: 600px){
+        display: none;
     }
 `;
 

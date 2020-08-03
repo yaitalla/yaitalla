@@ -10,24 +10,33 @@ export const Navwrap = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid silver;
-    background: white;
+    box-shadow: 2px 5px 3px 0px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2)
 `;
 export const Navbar = styled.nav`
     display: flex;
-    width: 80%;
-    background: silver;
+    justify-content: flex-end;
+    min-width: 360px;
+    background: rgba(255, 255, 255, 0.2)
+    @media (max-width: 600px){
+        display: none;
+    }
 `;
 export const StyledA = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    border: 1px solid red;
+    min-width: 120px;
     text-decoration: none;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 1px silver;
+    &:hover{
+        -webkit-text-stroke: 1px white;
+        font-size: 22px;
+    }
 `;
 export const LogoWrap = styled.div`
-    border: 1px solid cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +45,13 @@ export const LogoWrap = styled.div`
 `;
 export const Logo = styled.p`
     margin: 0;
+    font-family: 'Great Vibes', cursive;
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     border-radius: 50%;
     justify-content: center;
     font-size: 35px;
     line-height: 50px;
+    color white;
 `;
