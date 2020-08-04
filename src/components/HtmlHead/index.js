@@ -19,7 +19,7 @@ const HtmlHead = () => (
         property="og:title"
       />
       <meta property="og:type" content={ogType} key="ogtype" />
-      <meta property="og:image" content="/netero.png" key="ogimage" />
+      <meta property="og:image" content="/netero.jpg" key="ogimage" />
       <meta property="og:url" content={ogURL} key="ogurl" />
       <meta
         key="description"

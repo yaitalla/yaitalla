@@ -13,14 +13,30 @@ const jump = keyframes`
 `;
 const appear = keyframes`
     0% {
+    }
+    10% {
+    }
+    20% {
         opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+    }
+    50% {
+    }
+    60% {
     }
     70% {
-        opacity: 0;
+    }
+    80% {
+    }
+    90% {
+        opacity: 1;
     }
     100% {
-        opacity: 1;
-        
+        opacity: 0;
     }
 `;
 
@@ -37,7 +53,7 @@ export const Wrap = styled.div`
     line-height: 32px;
     font-size: 2.5em;
     transform: translateY(200%) translateX(-100%);
-    animation: 4s ${appear} forwards;
+    animation: 10s ${appear} forwards;
     ::before{
         content: '';
         position: absolute;
@@ -77,7 +93,8 @@ export const Circle = styled.div`
     margin-right: 2px;
     background: darkgray;
     border-radius: 50%;
-    animation: 1.5s ${jump} ease-in infinite;
+    animation: 1.5s ${jump} ease-in forwards;
+    animation-iteration-count: 6;
     &:nth-of-type(2){
         animation-delay: 0.3s;
     }

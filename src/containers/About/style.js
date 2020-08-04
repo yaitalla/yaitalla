@@ -4,7 +4,7 @@ export const Section = styled.section`
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: row;
     width: 100%;
     min-height: 800px;
@@ -22,6 +22,8 @@ export const TextWrap = styled.article`
     height: 50%;
 `;
 export const LargeTxt = styled.h3`
+    border: 1px solid pink;
 `;
 export const Txt = styled.p`
+    border: 1px solid pink;
 `;
