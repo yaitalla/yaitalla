@@ -53,7 +53,7 @@ export const Wrap = styled.div`
     line-height: 32px;
     font-size: 2.5em;
     transform: translateY(200%) translateX(-100%);
-    animation: 10s ${appear} forwards;
+    animation: 6s ${appear} forwards;
     ::before{
         content: '';
         position: absolute;

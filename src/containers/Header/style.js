@@ -44,7 +44,7 @@ export const LogoWrap = styled.div`
     width: 50px;
 `;
 export const Logo = styled.p`
-    margin: 0;
+    margin-left: 10px;
     font-family: 'Great Vibes', cursive;
     display: flex;
     width: 100%;
