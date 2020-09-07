@@ -1,9 +1,10 @@
 import { Mainwrap } from './style';
 import React from 'react';
 import Header from '../Header';
-import About from '../About';
+import LandingZone from '../LandingZone';
 import Contact from '../Contact';
 import Portfolio from '../Portfolio';
+import About from '../About';
 import HtmlHead from '../../components/HtmlHead';
 
 const Landing = () => {
@@ -11,6 +12,7 @@ const Landing = () => {
         <Mainwrap>
             <HtmlHead />
             <Header />
+            <LandingZone />
             <About />
             <Portfolio />
             <Contact />

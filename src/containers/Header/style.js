@@ -41,7 +41,7 @@ export const LogoWrap = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50px;
+    width: 200px;
 `;
 export const Logo = styled.p`
     margin-left: 10px;

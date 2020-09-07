@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Navwrap>
             <LogoWrap>
-                <Logo>Y</Logo>
+                <Logo>Yassine Aitalla</Logo>
             </LogoWrap>
             <Navbar>
                 <Link href="/" passHref>

@@ -5,4 +5,5 @@ export const Mainwrap = styled.main`
     flex-direction: column;
     position: relative;
     width: 100%;
+    background: rgba(0,0,0,1);
 `;
