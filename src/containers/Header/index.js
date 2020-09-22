@@ -1,23 +1,15 @@
 import React from 'react';
 import { Navwrap, Navbar, StyledA, LogoWrap, Logo } from './style';
 import Link from 'next/link';
+import DivLogo from '../../components/LogoDiv';
 
 const Header = () => {
     return (
         <Navwrap>
             <LogoWrap>
-                <Logo>Yassine Aitalla</Logo>
+                <DivLogo/>
             </LogoWrap>
             <Navbar>
-                <Link href="/" passHref>
-                    <StyledA>about</StyledA>
-                </Link>
-                <Link href="/" passHref>
-                    <StyledA>portfolio</StyledA>
-                </Link>
-                <Link href="/" passHref>
-                    <StyledA>contact</StyledA>
-                </Link>
             </Navbar>
         </Navwrap>
     )

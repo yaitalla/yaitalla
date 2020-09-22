@@ -1,49 +1,51 @@
 import styled, { keyframes } from 'styled-components';
 
 const leftRight = keyframes`
-40% {
+2% {
     transform: translate(50px, 0) scale(.7);
     opacity: 1;
     color: #cfe8dd;
 }
-60% {
+3% {
     color: #0f40ba;
 }
-80% {
+4% {
     transform: translate(0) scale(2);
     opacity: 0;
 }
-100% {
+5% {
     transform: translate(0) scale(1);
     opacity: 1;
+}
+100% {
+  transform: translate(0) scale(1);
+  opacity: 1;
 }
 `;
 
 export const Wrapper = styled.div`
   width: 80%;
-  padding: 20px;
+  padding: 0 20px;
+  margin: 0;
   display: flex;
   text-align: center;
   color: white;
   justify-content: flex-end;
-flex-direction: row;
+  flex-direction: row;
 `;
 
 export const Title = styled.h1`
   display: flex;
   justify-content: center;
+  font-family: Barcode;
   transition:  0.9s ease-in-out;
   width: 100%;
   align-self: center;
   align-items: center;
   text-align: center;
-  font-size: 50px;
-  &.scrolling{
-    width: 50%;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    font-size: 50px;
+  font-size: 65px;
+  @media (max-width: 600px) {
+    font-size: 40px;
   }
 `;
 export const Letter = styled.span`
@@ -51,7 +53,7 @@ export const Letter = styled.span`
   color: white;
   opacity: 0;
   transform: translate(-150px, 0) scale(0.3);
-    animation: ${leftRight} 0.5s forwards;
+    animation: ${leftRight} 10s infinite;
   &:nth-of-type(2) {
     animation-delay: 0.05s;
   }

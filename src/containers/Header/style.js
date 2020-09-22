@@ -44,12 +44,10 @@ export const LogoWrap = styled.div`
     width: 200px;
 `;
 export const Logo = styled.p`
-    margin-left: 10px;
     font-family: 'Great Vibes', cursive;
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    border-radius: 50%;
     justify-content: center;
     font-size: 35px;
     line-height: 50px;

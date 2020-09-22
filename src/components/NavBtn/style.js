@@ -12,19 +12,6 @@ const colorshift = keyframes`
     }
 `;
 
-export const Section = styled.section`
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 798px;
-    height: 100vh;
-    background: black;
-    // @media (max-width: )
-`;
-
 export const BtnWrap = styled.span`
     height: 25px;
     position: relative;

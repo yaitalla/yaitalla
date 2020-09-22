@@ -44,82 +44,40 @@ const animA = keyframes`
         height: 30%;
     }
 `;
-const textRight = keyframes`
+const animYSmall = keyframes`
     0%{
-        transform: translate(-80%, 0%);
-        opacity: 0;
+        clip-path: polygon(0 0, 20% 0, 30% 0, 50% 0, 70% 0, 80% 0, 100% 0, 100% 50%, 100% 80%, 100% 100%, 0 100%, 0 80%, 0 50%);
     }
-    50% {
-        transform: translate(-40%, 0%);
-        opacity: 0;
+    40% {
+        clip-path: polygon(0 0, 40% 0, 30% 5%, 50% 42%, 70% 5%, 60% 0, 100% 0, 55% 50%, 55% 95%, 75% 100%, 25% 100%, 45% 95%, 45% 50%);
     }
-    100% {
-        transform: translate(0%, 0%);
-        opacity: 1;
+    80%{
+        width: 70%;
+        height: 30%;
+        clip-path: polygon(0 0, 40% 0, 30% 5%, 50% 42%, 70% 5%, 60% 0, 100% 0, 55% 50%, 55% 95%, 75% 100%, 25% 100%, 45% 95%, 45% 50%);
     }
-`;
-const animationLeft = keyframes`
-    0% {
-        transform: translate(160%, 0%);
-    }
-    100% {
-        transform: translate(0%, 0%);
+    100%{
+        clip-path: polygon(0 0, 40% 0, 30% 5%, 50% 42%, 70% 5%, 60% 0, 100% 0, 55% 50%, 55% 95%, 75% 100%, 25% 100%, 45% 95%, 45% 50%);
+        width: 70%;
+        height: 30%;
     }
 `;
-
-export const LeftSide = styled.div`
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90%;
-    margin-top: 10px;
-`;
-export const RightSide = styled.div`
-    width: 100%;
-    height: 90%;
-    margin-top: 10px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-`;
-export const YassinePic = styled.img`
-    position: relative;
-    border-radius: 50%;
-    border: 5px solid white;
-    height: 300px;
-    transform: translate(160%, 0%);
-    overflow: hidden;
-    animation: 1s ${animationLeft} linear forwards;
-    -webkit-animation: 1s ${animationLeft} linear forwards;
-    padding: 0;
-`;
-export const Text = styled.h3`
-    width: 80%;
-    min-width: 300px;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    animation: 1s ${textRight} linear 0.3s forwards;
-    overflow: hidden;
-    margin: 5px 0px 5px 0;
-`;
-export const IconRow = styled.div`
-    width: 80%;
-    padding: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    opacity: 0;
-    transform: translate(-80%, 0%);    
-    justify-content: space-around;
-    min-width: 10%;
-    height: 80px;
-    animation: 1s ${textRight} linear 0.3s forwards;
+const animASmall = keyframes`
+    0%{
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 100% 20%, 100% 30%, 100% 40%, 100% 100%, 90% 100%, 80% 100%, 70% 100%, 60% 100%, 50% 100%, 40% 100%, 30% 100%, 20% 100%, 10% 99%, 0 100%, 0 40%, 0 30%, 0 20%, 0 10%);
+    }
+    40% {
+        clip-path: polygon(30% 0, 70% 0, 51% 5%, 70% 64%, 90% 95%, 100% 100%, 60% 100%, 70% 95%, 60% 70%, 50% 60%, 60% 50%, 50% 38%, 40% 50%, 49% 60%, 40% 70%, 30% 95%, 40% 100%, 0 100%, 10% 95%, 30% 64%, 49% 5%);
+    }
+    80% {
+        width: 70%;
+        height: 30%;
+    }
+    100%{
+        clip-path: polygon(30% 0, 70% 0, 51% 5%, 70% 64%, 90% 95%, 100% 100%, 60% 100%, 70% 95%, 60% 70%, 50% 60%, 60% 50%, 50% 38%, 40% 50%, 49% 60%, 40% 70%, 30% 95%, 40% 100%, 0 100%, 10% 95%, 30% 64%, 49% 5%);
+        width: 70%;
+        height: 30%;
+    }
 `;
 
 
@@ -129,11 +87,17 @@ export const Section = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 800px;
     height: 100vh;
     background: black;
-    // background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(0,0,0,1) 16%, rgba(0,0,0,1) 84%, rgba(106,106,106,1) 100%);
-    // @media (max-width: )
+    @media (max-width: 600px) {
+        height: 100vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: black;
+    }
 `;
 
 export const Y = styled.div`
@@ -142,6 +106,13 @@ export const Y = styled.div`
     height: 100%;
     background: rgba(50,50,50,0.2);
     animation: 1.5s ${animY} 1s linear forwards;
+    @media (max-width: 600px) {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: rgba(50,50,50,0.2);
+        animation: 1.5s ${animYSmall} 1s linear forwards;
+    }
 `;
 export const A = styled.div`
     width: 100%;
@@ -149,6 +120,13 @@ export const A = styled.div`
     background: rgba(50,50,50,0.2);
     animation: 1.5s ${animA} 2.5s linear forwards;
     position: absolute;
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 100%;
+        background: rgba(50,50,50,0.2);
+        animation: 1.5s ${animASmall} 2.5s linear forwards;
+        position: absolute;
+    }
 `;
 
 export const Welcome = styled.p`

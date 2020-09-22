@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
 import { Wrap, UpArrow, Path } from './style';
 
-const ScrollDown = () => {
-    const scrollUp = () => {
-        // globalThis.scrollTo({ top: globalThis.innerHeight*1.5, behavior: "smooth" })
-        document.getElementById('aboutSection').scrollIntoView({ 
+const ScrollDown = ({dest, reverse}) => {
+    const scrollUp = (dest) => {
+        document.getElementById(dest).scrollIntoView({ 
             behavior: 'smooth' 
-          });
+        });
     }
     return (
-        <Wrap id="scrollDispByyTracker" onClick={() => scrollUp()} >
+        <Wrap
+            up={reverse ? "180deg" : "0deg"}
+            id="scrollDispByyTracker"
+            onClick={() => scrollUp(dest)}
+        >
             <UpArrow>
                 <Path delay={0} d="M0 20 L30 52 L60 20" />
                 <Path delay={0.5} d="M0 40 L30 72 L60 40" />

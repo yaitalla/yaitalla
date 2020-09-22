@@ -1,11 +1,12 @@
 import React from 'react';
+import Arrow from '../../components/DownArrow';
 import { Section
 } from './style';
 
 const ContactSection = () => {
     return (
-        <Section>
-            
+        <Section id="contactSection">
+            <Arrow reverse={true} dest="landingZone" />
         </Section>
     )
 }

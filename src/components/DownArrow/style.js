@@ -19,12 +19,13 @@ export const Wrap = styled.div`
     display: flex;
     border-radius: 50%;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     bottom: 5%;
     align-self: center;
     max-width: 60px;
     max-height: 80px;
     overflow: hidden;
+    transform: rotate(${props => props.up});
     &:hover {
         border-color: transparent;
         path {

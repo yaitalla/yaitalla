@@ -4,12 +4,17 @@ import { Welcome} from './style';
 import ScrollDown from '../../components/DownArrow';
 
 const LandingZone = () => {
+    const scrollUp = () => {
+        document.getElementById('aboutSection').scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+    }
     return (
-        <Section>
+        <Section id="landingZone" >
             <Y/>
             <A/>
             <Welcome>Welcome</Welcome>
-            <ScrollDown />
+            <ScrollDown dest={'aboutSection'}/>
             
         </Section>
     )
