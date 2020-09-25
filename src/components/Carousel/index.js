@@ -6,20 +6,25 @@ import { Wrap, Item,
 } from './style';
 
 const Carousel = () => {
-    const [side, setSide] = useState('one');
-    const data = ["tests", "docs", "gps", "template", "file convertor", "library"]
-    const angle = (360/data.length);
+    const [side, setSide] = useState(0);
+    const data = ["tests", "docs", "docs", "gps", "template"]
+    const angle = 360/data.length;
+    const check = (way) => {
+        const carou = document.getElementById("carouselTracker");
+        carou.style.transform = `rotateY(${side+way}deg)`;
+        setSide(side + way)
+    }
     return (
         <Wrap>
-            <ArrowLeft/>
+            <ArrowLeft cb={() => check(angle)} />
                 <OutterCard>
                     <InnerBox id="carouselTracker">
                         {
-                            data.map((str, i) => <Item key={i} rotationY={(360/data.length)*i} >{str}</Item>)
+                            data.map((str, i) => <Item key={i} rotationY={angle*i} >{str}</Item>)
                         }
                     </InnerBox>
                 </OutterCard>
-            <ArrowRight  />
+            <ArrowRight  cb={() => check(-angle)} />
         </Wrap>
     )
 }

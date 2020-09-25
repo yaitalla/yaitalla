@@ -64,11 +64,12 @@ export const Item = styled.div`
     width: 250px;
     height: 200px;
     line-height: 200px;
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     color: #FFF;
-    opacity: 0.95;
-    background: silver;
+    background: black;
+    opacity: 0.9;
+    border: 12px solid silver;
     border-radius: 10px;
     transform: rotateY(${props => props.rotationY}deg) translateZ(250px);
 `;
