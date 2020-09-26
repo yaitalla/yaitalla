@@ -7,7 +7,7 @@ import { Wrap, Item,
 
 const Carousel = () => {
     const [side, setSide] = useState(0);
-    const data = ["tests", "docs", "docs", "gps", "template"]
+    const data = ["tests", "doc", "lib", "gps", "template"]
     const angle = 360/data.length;
     const check = (way) => {
         const carou = document.getElementById("carouselTracker");
