@@ -9,7 +9,7 @@ import HtmlHead from '../../components/HtmlHead';
 
 const Landing = () => {
     return (
-        <Mainwrap>
+        <Mainwrap onScroll={() => console.log(globalThis.scrollY)} >
             <HtmlHead />
             <Header />
             <LandingZone />
