@@ -1,52 +1,40 @@
 import React, { useState } from 'react';
-import { HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeJsIcon, GithubIcon } from '../../components/Icons';
+import IconRow from '../../components/IconRow';
 import NameAnimation from '../../components/NameAnim';
-import { Section, LeftSide, RightSide, Name, Slider,
-    YassinePic, Text, MoreBtn, BtnWrap, IconRow, Info, BtnLine
+import LeftPortrait from '../../components/FixedPortrait';
+import LocalNavBtn from '../../components/LocalNavBtn';
+import TextInfo from '../../components/TextNavigation';
+import { Section, SlideTitle, Appear,
+    RightSide, Name
 } from './style';
 
 const AboutSection = () => {
     const [slided, setSlided] = useState(false);
-    const nextStep = () => {
-        document.getElementById('portfolio').scrollIntoView({ 
-            behavior: 'smooth' 
-          });
+    const allAnim = () => {
+        const tab = document.getElementsByClassName("textinfo")
+        if (!slided && !tab[0].classList.contains('slided')){
+            for (let i=0; i<5; i++){
+                tab[i].classList.add('slided')
+            }
+        }
+        setSlided(!slided)
     }
     return (
-            <Section  id={'aboutSection'}>
-                <Slider slide={slided ? -100 : 0}>
-                    <LeftSide>
-                        <YassinePic src={'/netero.jpg'}/>
-                    </LeftSide>
-                    <RightSide>
-                        <Name>YASSINE AITALLA</Name>
-                        <NameAnimation s="FRONTEND DEVELOPER" />
-                        <BtnWrap>
-                            <MoreBtn onClick={() => setSlided(!slided)} >{"Learn more >>"}</MoreBtn>
-                        </BtnWrap>
-                    </RightSide>
-                </Slider>
-                <Info slide={slided ? 0 : 100} className="infoslide" >
-                        <Text>I can build your online ambition using the latest web technologies.</Text>
-                        <IconRow>
-                            <HtmlIcon/>
-                            <CssIcon/>
-                            <JsIcon/>
-                            <ReactIcon/>
-                            <NodeJsIcon/>
-                            <GithubIcon/>
-                        </IconRow>
-                        <BtnLine>
-                            <BtnWrap>
-                                <MoreBtn onClick={() => setSlided(!slided)} >{"<< back"}</MoreBtn>
-                            </BtnWrap>
-                            <BtnWrap>
-                                <MoreBtn onClick={nextStep} >{"continue >>"}</MoreBtn>
-                            </BtnWrap>
-                        </BtnLine>
-                    </Info>
-            </Section>
-        
+        <Section id="aboutSection" >
+            <LeftPortrait />
+            <IconRow />
+            <SlideTitle visu={slided ? 0 : 1} slide={slided ? -100 : 0}>
+                <RightSide>
+                    <Name>Yassine Aitalla</Name>
+                    <NameAnimation s="FRONTEND DEVELOPER" />
+                    <Appear>
+                        <LocalNavBtn cb={allAnim} content="learn more" />
+                    </Appear>
+                </RightSide>
+            </SlideTitle>
+            
+            <TextInfo visu={slided ? 1 : 0} cb={allAnim} offset={slided ? 50 : 150}/>
+        </Section>
     )
 }
 

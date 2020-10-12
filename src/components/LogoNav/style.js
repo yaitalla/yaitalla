@@ -39,6 +39,7 @@ export const Icon = styled.div`
     height: 50px;
     color: white;
     position: relative;
+    padding: 2px;
     overflow: hidden;
     &:before {
         box-sizing: border-box;
@@ -83,6 +84,7 @@ export const Icon = styled.div`
         }
     }
 `;
-export const Gitlab = styled.svg`
+export const StyledSvg = styled.svg`
       background: black;
+      padding: 2px;
 `;

@@ -24,7 +24,7 @@ const leftRight = keyframes`
 `;
 
 export const Wrapper = styled.div`
-  width: 80%;
+  width: 100%;
   padding: 0 20px;
   margin: 0;
   display: flex;
@@ -37,6 +37,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h1`
   display: flex;
   justify-content: center;
+  margin: 15px 0;
   font-family: Barcode;
   transition:  0.9s ease-in-out;
   width: 100%;
@@ -44,8 +45,11 @@ export const Title = styled.h1`
   align-items: center;
   text-align: center;
   font-size: 65px;
-  @media (max-width: 600px) {
-    font-size: 40px;
+  @media (max-width: 1000px) {
+    font-size: 55px;
+  }
+  @media (max-width: 850px) {
+    font-size: 35px;
   }
 `;
 export const Letter = styled.span`
