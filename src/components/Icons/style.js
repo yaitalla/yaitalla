@@ -60,6 +60,9 @@ export const IconWrap = styled.div`
         &:nth-of-type(6){
             animation-delay: 0.6s;
         }
+        &:nth-of-type(7){
+            animation-delay: 0.7s;
+        }
     }
     &.closed{
         animation: ${hide} .3s linear forwards;

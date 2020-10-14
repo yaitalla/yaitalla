@@ -12,9 +12,16 @@ const AboutSection = () => {
     const [slided, setSlided] = useState(false);
     const allAnim = () => {
         const tab = document.getElementsByClassName("textinfo")
+        const icons = document.getElementsByClassName('Ani')
+
         if (!slided && !tab[0].classList.contains('slided')){
             for (let i=0; i<5; i++){
                 tab[i].classList.add('slided')
+            }
+        } else if (icons[0].classList.contains('opened')){
+            for (let i=0; i<7; i++){
+                icons[i].classList.add('closed')
+                icons[i].classList.remove('opened')
             }
         }
         setSlided(!slided)

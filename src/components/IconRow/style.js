@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const IconRow = styled.div`
-    width: 60%;
+    width: 70%;
     z-index: 1;
     position: absolute;
     display: flex;
