@@ -63,8 +63,6 @@ export const Item = styled.div`
     background: #000;
     width: 250px;
     height: 200px;
-    line-height: 200px;
-    font-size: 2em;
     text-align: center;
     color: #FFF;
     background: black;
@@ -72,4 +70,33 @@ export const Item = styled.div`
     border: 12px solid silver;
     border-radius: 10px;
     transform: rotateY(${props => props.rotationY}deg) translateZ(250px);
+`;
+export const Frame = styled.div`
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+`;
+export const Title = styled.p`
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid silver;
+    transition: 0.5s ease;
+    &:hover{
+        cursor: pointer;
+        color: black;
+        background: white;
+}
+`;
+export const Image = styled.img`
+    width: 150px;
+    height: 150px;
+`;
+
+export const StyledA = styled.a`
+    text-decoration: none;
+    color: silver;
 `;
