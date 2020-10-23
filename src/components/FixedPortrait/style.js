@@ -11,6 +11,9 @@ export const Wrap = styled.figure`
     margin-top: 10px;
     @media (max-width: 600px) {
         height: 20%;
+        top: 15%;
+        margin: 0;
+        position: absolute;
     }
 `;
 export const Picture = styled.img`

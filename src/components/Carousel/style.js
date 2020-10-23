@@ -5,7 +5,8 @@ export const Left = styled.div`
     z-index: 10;
     display: flex;
     justify-content: center;
-    left: 5%;
+    left: 35%;
+    bottom: 20%;
     min-width: 60px;
     min-height: 60px;
     border-radius: 50%;
@@ -16,14 +17,18 @@ export const Left = styled.div`
         color: #16738D;
         cursor: pointer;
     }
-    
+    @media (max-width: 600px) {
+        left: 15%;
+        bottom: 33%;
+    }
 `;
 export const Right = styled.div`
     color: white;
     position: absolute;
     display: flex;
     justify-content: center;
-    right: 5%;
+    right: 35%;
+    bottom: 20%;
     min-width: 60px;
     min-height: 60px;
     border-radius: 50%;
@@ -32,6 +37,10 @@ export const Right = styled.div`
         background: rgba(255, 255, 255, 0.6);
         color: #16738D;
         cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        right: 15%;
+        bottom: 33%;
     }
 `;
 export const Wrap = styled.div`
@@ -70,6 +79,11 @@ export const Item = styled.div`
     border: 12px solid silver;
     border-radius: 10px;
     transform: rotateY(${props => props.rotationY}deg) translateZ(250px);
+    @media (max-width: 600px) {
+        width: 200px;
+        height: 150px;
+        border: 6px solid silver;
+    }
 `;
 export const Frame = styled.div`
     align-items: center;
@@ -94,6 +108,10 @@ export const Title = styled.p`
 export const Image = styled.img`
     width: 150px;
     height: 150px;
+    @media (max-width: 600px) {
+        width: 100px;
+        height: 100px;
+    }  
 `;
 
 export const StyledA = styled.a`

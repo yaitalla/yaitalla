@@ -18,6 +18,7 @@ const arrow = keyframes`
 export const Wrap = styled.div`
     display: flex;
     border-radius: 50%;
+    z-index: 2;
     cursor: pointer;
     position: absolute;
     bottom: 5%;

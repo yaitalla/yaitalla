@@ -4,6 +4,7 @@ import NameAnimation from '../../components/NameAnim';
 import LeftPortrait from '../../components/FixedPortrait';
 import LocalNavBtn from '../../components/LocalNavBtn';
 import TextInfo from '../../components/TextNavigation';
+import ScrollDown from '../../components/DownArrow';
 import { Section, SlideTitle, Appear,
     RightSide, Name
 } from './style';
@@ -41,6 +42,7 @@ const AboutSection = () => {
             </SlideTitle>
             
             <TextInfo visu={slided ? 1 : 0} cb={allAnim} offset={slided ? 50 : 150}/>
+            <ScrollDown dest="portfolio" />
         </Section>
     )
 }

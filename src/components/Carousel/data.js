@@ -15,17 +15,17 @@ export default [
         dest: 'https://github.com/yaitalla/LiveStreamDemo'
     },
     {
-        title: "project in progress",
+        title: "coming soon",
         imgSrc: '/travolta.gif',
         dest: '/notFound'
     },
     {
-        title: "project in progress",
+        title: "coming soon",
         imgSrc: '/travolta.gif',
         dest: '/notFound'
     },
     {
-        title: "project in progress",
+        title: "coming soon",
         imgSrc: '/travolta.gif',
         dest: '/notFound'
     }

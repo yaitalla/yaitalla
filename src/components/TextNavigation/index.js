@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import LocalNavBtn from '../../components/LocalNavBtn';
-import { Wrap, Text, Side, F } from './style';
+import { Wrap, Text, Side } from './style';
 
 const TextNav = ({ visu, offset, cb}) => {
     const show = () => {

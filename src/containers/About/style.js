@@ -21,9 +21,10 @@ export const Section = styled.section`
     min-height: 800px;
     height: 100vh;
     @media (max-width: 600px){
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 `;
 export const SlideTitle = styled.div`
@@ -38,6 +39,7 @@ export const SlideTitle = styled.div`
     transform: translate(${props => props.slide}%);
     @media (max-width: 600px) {
         display: flex;
+        height: 30%;
         align-items: center;
         flex-direction: column;
         justify-content: center;

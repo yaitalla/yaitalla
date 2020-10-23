@@ -1,5 +1,14 @@
 import styled, {keyframes} from 'styled-components';
 
+const flash = keyframes`
+    2% {
+        color: #cfe8dd;
+    }
+    3% {
+        color: #0f40ba;
+    }
+`;
+
 const appear = keyframes`
     
     90%{
@@ -140,7 +149,7 @@ export const Text = styled.h3`
         &:nth-of-type(4){
             opacity: 0;
             transform: translateX(30%) translateY(0%) scale(1.1);
-            animation: ${fourth} 8s forwards;
+            animation: ${fourth} 8s forwards, ${flash} 10s ease infinite;
             &:hover{
                 cursor: pointer;
                 -webkit-text-stroke: 1px black;
@@ -151,8 +160,4 @@ export const Text = styled.h3`
     @media (max-width: 600px) {
         justify-content: center;
     }
-`;
-
-export const F = styled.div`
-    border: 1px solid pink;
 `;
