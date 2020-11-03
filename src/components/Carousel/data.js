@@ -18,15 +18,5 @@ export default [
         title: "coming soon",
         imgSrc: '/travolta.gif',
         dest: '/notFound'
-    },
-    {
-        title: "coming soon",
-        imgSrc: '/travolta.gif',
-        dest: '/notFound'
-    },
-    {
-        title: "coming soon",
-        imgSrc: '/travolta.gif',
-        dest: '/notFound'
     }
 ]
