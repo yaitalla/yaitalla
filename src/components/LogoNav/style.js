@@ -26,6 +26,12 @@ export const NavWrap = styled.nav`
             transform: scaleX(1);
         }
     }
+    @media (max-width: 600px){
+        &:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+    }
 `;
 
 export const Link = styled.a`
@@ -83,6 +89,7 @@ export const Icon = styled.div`
             border-color: white;
         }
     }
+    
 `;
 export const StyledSvg = styled.svg`
       background: black;

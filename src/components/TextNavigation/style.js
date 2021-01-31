@@ -85,7 +85,7 @@ export const Wrap = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     overflow: hidden;
     width: 50%;
@@ -96,6 +96,8 @@ export const Wrap = styled.div`
         display: flex;
         transform: translate(${props => props.slide - 50}%);
         width: 80%;
+        top: 40%;
+        height: 40%;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -114,11 +116,15 @@ export const Side = styled.div`
     transform: translate(200%);
     &.slided{
         transform: translate(200%);
-        animation: ${appear} 9s forwards;
+        animation: ${appear} 2s forwards;
     }
     @media (max-width: 600px) {
         left: 40%;
         bottom: 15%;
+        &.slided{
+            transform: translate(200%);
+            animation: ${appear} 2s forwards;
+        }
     }
 `;
 
@@ -134,22 +140,22 @@ export const Text = styled.h3`
     &.slided{
         &:nth-of-type(1){
             opacity: 0;
-            animation: ${first} 8s forwards;
+            animation: ${first} 7s forwards;
         }
         &:nth-of-type(2){
             opacity: 0;
             transform: translateX(30%) translateY(-200%);
-            animation: ${second} 8s forwards;
+            animation: ${second} 7s forwards;
         }
         &:nth-of-type(3){
             opacity: 0;
             transform: translateX(30%) translateY(-100%);
-            animation: ${third} 8s forwards;
+            animation: ${third} 7s forwards;
         }
         &:nth-of-type(4){
             opacity: 0;
             transform: translateX(30%) translateY(0%) scale(1.1);
-            animation: ${fourth} 8s forwards, ${flash} 10s ease infinite;
+            animation: ${fourth} 7s forwards, ${flash} 10s ease infinite;
             &:hover{
                 cursor: pointer;
                 -webkit-text-stroke: 1px black;
@@ -158,6 +164,7 @@ export const Text = styled.h3`
         }
     }
     @media (max-width: 600px) {
-        justify-content: center;
+        font-size: 1em;
+        margin: 10px;
     }
 `;

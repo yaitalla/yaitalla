@@ -18,13 +18,15 @@ export const Section = styled.section`
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    min-height: 800px;
     height: 100vh;
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: relative;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: black;
     }
 `;
 export const SlideTitle = styled.div`
@@ -39,7 +41,6 @@ export const SlideTitle = styled.div`
     transform: translate(${props => props.slide}%);
     @media (max-width: 600px) {
         display: flex;
-        height: 30%;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -67,14 +68,10 @@ export const Name = styled.h2`
 export const RightSide = styled.div`
     width: 100%;
     z-index: 0;
-    height: 100%;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @media (max-width: 600px) {
-        height: 50%;
-    }
     
 `;

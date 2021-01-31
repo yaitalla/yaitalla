@@ -15,6 +15,7 @@ const colorshift = keyframes`
 
 export const ButtonWrap = styled.span`
     height: 25px;
+    padding: 0;
     position: relative;
     align-self: center;
     display: flex;

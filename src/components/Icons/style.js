@@ -36,7 +36,6 @@ const hide = keyframes`
 export const IconWrap = styled.div`
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     color: white;
     transform: translateY(120%);
     transition: 1s ease-in-out;
@@ -66,5 +65,8 @@ export const IconWrap = styled.div`
     }
     &.closed{
         animation: ${hide} .3s linear forwards;
+    }
+    @media (max-width: 600px) {
+        margin: 5px;
     }
 `;

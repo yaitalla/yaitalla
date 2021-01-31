@@ -13,6 +13,8 @@ export const IconRow = styled.div`
     min-width: 10%;
     height: 75px;
     @media (max-width: 600px) {
+        width: 90%;
         top: 30%;
+        justify-content: space-around;
     }
 `;

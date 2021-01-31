@@ -19,7 +19,7 @@ export const Left = styled.div`
     }
     @media (max-width: 600px) {
         left: 15%;
-        bottom: 33%;
+        bottom: 25%;
     }
 `;
 export const Right = styled.div`
@@ -40,7 +40,7 @@ export const Right = styled.div`
     }
     @media (max-width: 600px) {
         right: 15%;
-        bottom: 33%;
+        bottom: 25%;
     }
 `;
 export const Wrap = styled.div`
@@ -49,6 +49,9 @@ export const Wrap = styled.div`
     align-items: center;
     width: 100%;
     height: 50%;
+    @media (max-width: 600px) {
+        width: 50%;
+    }
 `;
 export const OutterCard = styled.figure`
     margin: 0 auto;
@@ -56,6 +59,9 @@ export const OutterCard = styled.figure`
     height: 200px;
     position: relative;
     perspective: 1000px;
+    @media (max-width: 600px) {
+        width: 150px;
+    }
 `;
 export const InnerBox = styled.div`
     height: 100%;
@@ -63,6 +69,9 @@ export const InnerBox = styled.div`
     position: absolute;
     transform-style: preserve-3d;
     transition: transform 1s;
+    @media (max-width: 600px) {
+
+    }
 `;
 
 
@@ -80,9 +89,10 @@ export const Item = styled.div`
     border-radius: 10px;
     transform: rotateY(${props => props.rotationY}deg) translateZ(250px);
     @media (max-width: 600px) {
-        width: 200px;
+        width: 150px;
         height: 150px;
         border: 6px solid silver;
+        transform: rotateY(${props => props.rotationY}deg) translateZ(150px);
     }
 `;
 export const Frame = styled.div`

@@ -11,7 +11,7 @@ export const Wrap = styled.figure`
     margin-top: 10px;
     @media (max-width: 600px) {
         height: 20%;
-        top: 15%;
+        top: 5%;
         margin: 0;
         position: absolute;
     }
