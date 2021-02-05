@@ -16,7 +16,7 @@ const Side = ({ rotationY, item }) => {
                         <Title>{item.title}</Title>
                     </StyledA>
                 </Link>
-                <Image src={item.imgSrc} />
+                <Image className={item.cn} src={item.imgSrc} />
             </Frame>
         </Item>
     )

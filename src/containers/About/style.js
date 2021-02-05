@@ -62,6 +62,7 @@ export const Name = styled.h2`
     justify-content: center;
     text-align: center;
     color: white;
+    font-size: 2rem;
     margin: 0;
 `;
 

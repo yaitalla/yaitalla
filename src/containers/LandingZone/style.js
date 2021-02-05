@@ -105,26 +105,26 @@ export const Y = styled.div`
     position: absolute;
     height: 100%;
     background: rgba(50,50,50,0.2);
-    animation: 1.5s ${animY} 1s linear forwards;
+    animation: 1s ${animY} 1s linear forwards;
     @media (max-width: 600px) {
         width: 100%;
         position: absolute;
         height: 100%;
         background: rgba(50,50,50,0.2);
-        animation: 1.5s ${animYSmall} 1s linear forwards;
+        animation: 1s ${animYSmall} 1s linear forwards;
     }
 `;
 export const A = styled.div`
     width: 100%;
     height: 100%;
     background: rgba(50,50,50,0.2);
-    animation: 1.5s ${animA} 2.5s linear forwards;
+    animation: 1s ${animA} 2.5s linear forwards;
     position: absolute;
     @media (max-width: 600px) {
         width: 100%;
         height: 100%;
         background: rgba(50,50,50,0.2);
-        animation: 1.5s ${animASmall} 2.5s linear forwards;
+        animation: 1s ${animASmall} 2.5s linear forwards;
         position: absolute;
     }
 `;

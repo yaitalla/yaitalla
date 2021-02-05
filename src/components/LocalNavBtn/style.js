@@ -44,6 +44,7 @@ export const ButtonWrap = styled.span`
 export const NavBtn = styled.button`
     font-family: RobotoCondensed-Bold;
     background: black;
+    font-size: 1.5rem;
     color: white;
     border: none;
     cursor: pointer;

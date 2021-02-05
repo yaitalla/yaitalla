@@ -121,7 +121,13 @@ export const Image = styled.img`
     @media (max-width: 600px) {
         width: 100px;
         height: 100px;
-    }  
+    }
+    &.nasa {
+        height: 80px;
+        @media (max-width: 600px) {
+            height: 60px;
+        }
+    }
 `;
 
 export const StyledA = styled.a`

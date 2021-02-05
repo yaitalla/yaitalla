@@ -136,6 +136,7 @@ export const Text = styled.h3`
     display: flex;
     justify-content: flex-start;
     color: white;
+    font-size: 2rem;
     transition:  0.9s ease-in-out;
     &.slided{
         &:nth-of-type(1){
@@ -164,7 +165,7 @@ export const Text = styled.h3`
         }
     }
     @media (max-width: 600px) {
-        font-size: 1em;
+        font-size: 1.2rem;
         margin: 10px;
     }
 `;
