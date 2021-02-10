@@ -10,5 +10,13 @@ export const Section = styled.section`
     min-height: 800px;
     height: 100vh;
     background: black;
-    // @media (max-width: )
+    @media (max-width: 600px) {
+        height: 100vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: black;
+    }
 `;

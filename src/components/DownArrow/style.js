@@ -35,6 +35,9 @@ export const Wrap = styled.div`
             stroke: silver;
         }
     }
+    @media (max-width: 600px) {
+        bottom: 15%;
+    }
 `;
 export const UpArrow = styled.svg`
     width: 60px;
