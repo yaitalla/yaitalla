@@ -1,14 +1,8 @@
 import React from 'react';
-import { Section, H1, Y , A} from './style';
-import { Welcome} from './style';
+import { Section, Welcome, Y , A} from './style';
 import ScrollDown from '../../components/DownArrow';
 
 const LandingZone = () => {
-    const scrollUp = () => {
-        document.getElementById('aboutSection').scrollIntoView({ 
-            behavior: 'smooth' 
-          });
-    }
     return (
         <Section id="landingZone" >
             <Y/>

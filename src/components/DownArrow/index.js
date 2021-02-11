@@ -10,7 +10,6 @@ const ScrollDown = ({dest, reverse}) => {
     return (
         <Wrap
             up={reverse ? "180deg" : "0deg"}
-            id="scrollDispByyTracker"
             onClick={() => scrollUp(dest)}
         >
             <UpArrow>
