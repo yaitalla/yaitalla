@@ -21,7 +21,7 @@ export default [
         cn: "",
         title: "Video Chat Room",
         imgSrc: '/livestream.gif',
-        dest: 'https://github.com/yaitalla/LiveStreamDemo'
+        dest: '/notFound'
     },
     {
         cn: "",
