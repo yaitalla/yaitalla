@@ -7,7 +7,6 @@ export const Section = styled.section`
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    min-height: 800px;
     height: 100vh;
     background: black;
     @media (max-width: 600px) {

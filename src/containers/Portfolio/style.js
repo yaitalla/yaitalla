@@ -19,7 +19,6 @@ export const Section = styled.section`
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    min-height: 798px;
     height: 100vh;
     background: black;
     @media (max-width: 600px) {
