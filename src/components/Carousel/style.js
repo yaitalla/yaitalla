@@ -104,6 +104,7 @@ export const Frame = styled.div`
     flex-direction: column;
     position: relative;
 `;
+
 export const Title = styled.p`
     margin: 0;
     padding: 0;
@@ -113,8 +114,9 @@ export const Title = styled.p`
         cursor: pointer;
         color: black;
         background: white;
-}
+    }
 `;
+
 export const Image = styled.img`
     width: 150px;
     height: 150px;
@@ -132,5 +134,5 @@ export const Image = styled.img`
 
 export const StyledA = styled.a`
     text-decoration: none;
-    color: silver;
+    color: white;
 `;

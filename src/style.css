@@ -4,9 +4,6 @@ html, body, #__next {
     /* background: linear-gradient(0deg, rgba(31,31,32,1) 0%, rgba(43,76,126,1) 11%, rgba(86,126,187,1) 51%, rgba(96,109,128,1) 72%, rgba(220,224,230,1) 100%); */
 }
 
-body {
-}
-
 @font-face {
     font-family: "Barcode";
     src: url("fonts/LibreBarcode128Text-Regular.ttf");

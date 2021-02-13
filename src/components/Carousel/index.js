@@ -24,8 +24,6 @@ const Side = ({ rotationY, item }) => {
 
 const Carousel = () => {
     const [side, setSide] = useState(0);
-    // const data = ["tests", "doc", "/location-icon.png", "gps", "template"]
-    // const angle = 360/data.length;
     const angle = 360/Data.length;
     const check = (way) => {
         const carou = document.getElementById("carouselTracker");
