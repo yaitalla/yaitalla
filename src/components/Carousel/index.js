@@ -8,6 +8,7 @@ import { Wrap, Item, Title, Image,
 import Data from './data';
 
 const Side = ({ rotationY, item }) => {
+    console.log(item.title, rotationY)
     return (
         <Item rotationY={rotationY} >
             <Frame>
@@ -26,7 +27,8 @@ const Carousel = () => {
     const [side, setSide] = useState(0);
     const angle = 360/Data.length;
     const check = (way) => {
-        const carou = document.getElementById("carouselTracker");
+    console.log(side+way)
+    const carou = document.getElementById("carouselTracker");
         carou.style.transform = `rotateY(${side+way}deg)`;
         setSide(side + way)
     }
