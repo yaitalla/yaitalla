@@ -45,8 +45,7 @@ export const Right = styled.div`
 `;
 export const Wrap = styled.div`
     display: flex;
-        border: 1px solid yellow;
-        justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 50%;
@@ -93,7 +92,8 @@ export const Item = styled.div`
         width: 150px;
         height: 150px;
         border: 6px solid silver;
-        transform: rotateY(${props => props.rotationY}deg) translateZ(150px) ;
+        transition: transform 1s;
+        transform: rotateY(${props => props.rotationY}deg) translateZ(150px) translateY(${props => props.transY}%) scale(${props => props.scale});
     }
 `;
 export const Frame = styled.div`

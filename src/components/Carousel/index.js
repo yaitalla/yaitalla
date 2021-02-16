@@ -6,31 +6,17 @@ import { Wrap, Item, Title, Image,
     InnerBox
 } from './style';
 import Data from './data';
-
-const Side = ({ rotationY, item }) => {
-    console.log(item.title, rotationY)
-    return (
-        <Item rotationY={rotationY} >
-            <Frame>
-                <Link passHref href={item.dest}>
-                    <StyledA target={'_blank'}>
-                        <Title>{item.title}</Title>
-                    </StyledA>
-                </Link>
-                <Image className={item.cn} src={item.imgSrc} />
-            </Frame>
-        </Item>
-    )
-}
+import Panel from './panel';
 
 const Carousel = () => {
     const [side, setSide] = useState(0);
+    const [primary, setPrimary] = useState(0);
     const angle = 360/Data.length;
     const check = (way) => {
-    console.log(side+way)
-    const carou = document.getElementById("carouselTracker");
+        const carou = document.getElementById("carouselTracker");
         carou.style.transform = `rotateY(${side+way}deg)`;
-        setSide(side + way)
+        setSide(side + way);
+        setPrimary(primary < Data.length-1 ? primary+1 : 0);
     }
     return (
         <Wrap>
@@ -38,7 +24,12 @@ const Carousel = () => {
                 <OutterCard>
                     <InnerBox id="carouselTracker">
                         {
-                            Data.map((item, i) => <Side key={i} rotationY={angle*i} item={item} />)
+                            Data.map((item, i) => <Panel key={i} 
+                                                        rotationY={angle*i} 
+                                                        item={item} 
+                                                        side={i}
+                                                        primary={primary}
+                                                    />)
                         }
                     </InnerBox>
                 </OutterCard>
