@@ -96,7 +96,7 @@ export const Wrap = styled.div`
         display: flex;
         transform: translate(${props => props.slide - 50}%);
         width: 80%;
-        top: 40%;
+        top: 30%;
         height: 40%;
         align-items: center;
         flex-direction: column;
