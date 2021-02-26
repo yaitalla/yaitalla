@@ -17,3 +17,10 @@ html, body, #__next {
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Teko";
+    src: url("fonts/Teko-Medium.ttf");
+    font-weight: 400;
+    font-style: normal;
+}

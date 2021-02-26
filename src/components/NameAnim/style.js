@@ -38,15 +38,15 @@ export const Title = styled.h1`
   display: flex;
   justify-content: center;
   margin: 15px 0;
-  font-family: Barcode;
+  font-family: Teko;
   transition:  0.9s ease-in-out;
   width: 100%;
   align-self: center;
   align-items: center;
   text-align: center;
-  font-size: 65px;
-  @media (max-width: 1000px) {
-    font-size: 55px;
+  font-size: 45px;
+  @media (max-width: 1100px) {
+    font-size: 40px;
   }
   @media (max-width: 850px) {
     font-size: 35px;

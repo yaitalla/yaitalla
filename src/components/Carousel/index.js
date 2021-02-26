@@ -16,7 +16,11 @@ const Carousel = () => {
         const carou = document.getElementById("carouselTracker");
         carou.style.transform = `rotateY(${side+way}deg)`;
         setSide(side + way);
-        setPrimary(primary < Data.length-1 ? primary+1 : 0);
+        if(way < 0){
+            setPrimary(primary < Data.length-1 ? primary+1 : 0);
+        } else {
+            setPrimary(primary < 1 ? Data.length-1 : primary-1);
+        }
     }
     return (
         <Wrap>

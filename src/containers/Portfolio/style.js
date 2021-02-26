@@ -16,9 +16,10 @@ export const Section = styled.section`
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 100%;
+    padding: 0;
     height: 100vh;
     background: black;
     @media (max-width: 600px) {
@@ -30,6 +31,16 @@ export const Section = styled.section`
         width: 100%;
         background: black;
     }
+`;
+
+export const Title = styled.h2`
+    width: 100%;
+    align-self: flex-start;
+    color: white;
+    top: 0;
+    position: absolute;
+    margin: 0;
+    font-family: Teko; 
 `;
 
 export const BtnWrap = styled.span`

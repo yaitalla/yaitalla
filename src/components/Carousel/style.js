@@ -47,11 +47,13 @@ export const Wrap = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 100px;
     width: 100%;
     height: 50%;
     @media (max-width: 600px) {
         width: 50%;
-    }
+        margin-bottom: 50px;
+}
 `;
 export const OutterCard = styled.figure`
     margin: 0 auto;
