@@ -7,11 +7,11 @@ export const IconRow = styled.div`
     display: flex;
     align-items: flex-end;
     overflow: hidden;
-    top: 20%;
+    top: 10%;
     flex-direction: row;
     justify-content: space-around;
     min-width: 10%;
-    height: 75px;
+    height: 70px;
     @media (max-width: 600px) {
         width: 90%;
         top: 30%;

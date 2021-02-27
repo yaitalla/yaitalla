@@ -19,3 +19,13 @@ export const Section = styled.section`
         background: black;
     }
 `;
+export const Title = styled.h2`
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 1.9rem;
+    align-self: flex-start;
+    color: white;
+    top: 0;
+    position: absolute;
+    font-family: Teko; 
+`;

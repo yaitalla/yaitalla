@@ -35,11 +35,12 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
     width: 100%;
-    align-self: flex-start;
+    letter-spacing: 2px;
+    font-size: 1.9rem;
     color: white;
-    top: 0;
+    top: 20px;
+    left: 10px;
     position: absolute;
-    margin: 0;
     font-family: Teko; 
 `;
 

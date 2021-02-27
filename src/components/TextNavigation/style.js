@@ -92,6 +92,10 @@ export const Wrap = styled.div`
     opacity: ${props => props.visu};
     height: 50%;
     transform: translate(${props => props.slide}%);
+    @media (max-width: 800px) {
+    }
+    @media (max-width: 700px) {
+    }
     @media (max-width: 600px) {
         display: flex;
         transform: translate(${props => props.slide - 50}%);
@@ -136,7 +140,7 @@ export const Text = styled.h3`
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition:  0.9s ease-in-out;
     &.slided{
         &:nth-of-type(1){
@@ -164,8 +168,16 @@ export const Text = styled.h3`
             }
         }
     }
+    @media (max-width: 1000px) {
+        font-size: 1.6rem;
+    }
+    @media (max-width: 800px) {
+        font-size: 24px;
+    }
+    @media (max-width: 700px) {
+        font-size: 18px;
+    }
     @media (max-width: 600px) {
         font-size: 1.2rem;
-        margin: 10px;
     }
 `;

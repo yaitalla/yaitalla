@@ -1,7 +1,7 @@
 import React from 'react';
 import Arrow from '../../components/DownArrow';
 import LogoNavbar from '../../components/LogoNav';
-import { Section
+import { Section, Title
 } from './style';
 
 const ContactSection = () => {

@@ -57,7 +57,7 @@ export const Name = styled.h2`
     width: 80%;
     min-width: 300px;
     letter-spacing: 3px;
-    font-family: RobotoCondensed-Bold;
+    font-family: Teko;
     display: flex;
     justify-content: center;
     text-align: center;
