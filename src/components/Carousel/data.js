@@ -19,9 +19,9 @@ export default [
     },
     {
         cn: "",
-        title: "Video Chat Room",
+        title: "toolbox app",
         imgSrc: '/livestream.gif',
-        dest: '/notFound'
+        dest: 'https://github.com/yaitalla/stock-manager'
     },
     {
         cn: "",

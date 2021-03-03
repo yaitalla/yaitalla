@@ -34,14 +34,22 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
-    width: 100%;
+    width: 90%;
     letter-spacing: 2px;
     font-size: 1.9rem;
     color: white;
     top: 20px;
-    left: 10px;
+    left: 0;
+    text-align: right;
     position: absolute;
+    align-self: flex-end;
     font-family: Teko; 
+    @media (max-width: 600px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 `;
 
 export const BtnWrap = styled.span`
