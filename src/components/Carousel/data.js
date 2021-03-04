@@ -19,8 +19,8 @@ export default [
     },
     {
         cn: "",
-        title: "toolbox app",
-        imgSrc: '/livestream.gif',
+        title: "stock app",
+        imgSrc: '/box.gif',
         dest: 'https://github.com/yaitalla/stock-manager'
     },
     {
