@@ -7,7 +7,7 @@ const PortfolioSection = () => {
 
     return (
         <Section id={'portfolio'}>
-            <Title>Some personal projects</Title>
+            {/* <Title>Some personal projects</Title> */}
             <Carousel />
             <ScrollDown dest="contactSection" />
         </Section>
