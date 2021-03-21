@@ -1,2 +1,2 @@
-## [Visit](https://yaitalla.vercel.app)
+[preview](https://yaitalla.vercel.app)
 
