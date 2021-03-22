@@ -1,2 +1,2 @@
-[preview](https://yaitalla.vercel.app)
+[deprecated](https://yaitalla.vercel.app)
 
