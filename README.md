@@ -1,2 +1,1 @@
-[deprecated](https://yaitalla.vercel.app)
-
+offline
