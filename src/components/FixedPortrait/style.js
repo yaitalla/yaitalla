@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const flash = keyframes`
+    2% {
+        color: #cfe8dd;
+    }
+    3% {
+        color: #0f40ba;
+    }
+`;
 
 export const Wrap = styled.figure`
     display: flex;
@@ -9,6 +18,7 @@ export const Wrap = styled.figure`
     width: 100%;
     height: 100%;
     margin-top: 10px;
+    
     @media (max-width: 600px) {
         height: 20%;
         top: 5%;
@@ -24,6 +34,11 @@ export const Picture = styled.img`
     height: 200px;
     overflow: hidden;
     padding: 0;
+    &:hover{
+        cursor: pointer;
+        border: 4px solid lightgrey;
+        color: white;
+    }
     @media (max-width: 600px) {
         height: 100px;
     }

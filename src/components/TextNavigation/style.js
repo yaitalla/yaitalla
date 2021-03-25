@@ -27,14 +27,11 @@ const first = keyframes`
         opacity: 1;
     }
     50%{
-        transform: translateY(-100%);
-    }
-    75%{
-        transform: translateY(-200%);
+        transform: translateY(-120%);
     }
     100%{
-        transform: translateY(-300%);
         opacity: 1;
+        transform: translateY(-120%);
     }
 `;
 const second = keyframes`
@@ -46,11 +43,7 @@ const second = keyframes`
         transform: translateX(0%) translateY(0%);
         opacity: 1;
     }
-    75%{
-        transform: translateY(-100%);
-    }
     100%{
-        transform: translateY(-200%);
         opacity: 1;
     }
 `;
@@ -149,8 +142,12 @@ export const Text = styled.h3`
         }
         &:nth-of-type(2){
             opacity: 0;
-            transform: translateX(30%) translateY(-200%);
-            animation: ${second} 7s forwards;
+            animation: ${second} 7s forwards, ${flash} 10s ease infinite;
+            &:hover{
+                cursor: pointer;
+                -webkit-text-stroke: 1px black;
+                color: white;
+            }
         }
         &:nth-of-type(3){
             opacity: 0;

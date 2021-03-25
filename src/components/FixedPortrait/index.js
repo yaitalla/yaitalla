@@ -1,9 +1,9 @@
 import React from 'react';
 import { Wrap, Picture} from './style';
 
-const LeftPortrait = () => {
+const LeftPortrait = ({cb}) => {
     return (
-        <Wrap>
+        <Wrap onClick={cb}>
             <Picture src={'/netero.jpg'} />
         </Wrap>
     )

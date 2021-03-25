@@ -16,7 +16,7 @@ const AboutSection = () => {
         const icons = document.getElementsByClassName('Ani')
 
         if (!slided && !tab[0].classList.contains('slided')){
-            for (let i=0; i<5; i++){
+            for (let i=0; i<2; i++){
                 tab[i].classList.add('slided')
             }
         } else if (icons[0].classList.contains('opened')){
@@ -29,7 +29,7 @@ const AboutSection = () => {
     }
     return (
         <Section id="aboutSection" >
-            <LeftPortrait />
+            <LeftPortrait cb={allAnim} />
             <IconRow />
             <SlideTitle visu={slided ? 0 : 1} slide={slided ? -100 : 0}>
                 <RightSide>

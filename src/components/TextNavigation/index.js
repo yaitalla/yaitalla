@@ -22,15 +22,9 @@ const TextNav = ({ visu, offset, cb}) => {
     return (
         <Wrap visu={visu} slide={offset}>
                 <Text className={"textinfo"}>Build modern web applications</Text>
-                <Text className={"textinfo"}>Secure and fast websites</Text>
-                <Text className={"textinfo"}>Progressive webapps</Text>
                 <Text onClick={()=>show()} className={"textinfo"}>
                     Using the latest technologies
-                    {/* <F>{"<-"}</F> */}
                 </Text>
-            <Side className={"textinfo"} visu={visu} >
-                <LocalNavBtn cb={cb} content='back' />
-            </Side>
         </Wrap>
     )
 }
