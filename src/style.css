@@ -24,3 +24,17 @@ html, body, #__next {
     font-weight: 400;
     font-style: normal;
 }
+
+.toggle-switch input:checked ~ .toggle-wrapper .toggle-switch {
+    left: 0.25em;
+  }
+  .toggle-switch input ~ input:checked ~ .label {
+    color: #45C825;
+  }
+  .toggle-switch input ~ input:checked ~ .toggle-wrapper {
+    background: #45C825;
+  }
+  .toggle-switch input ~ input:checked ~ .toggle-wrapper .toggle-switch {
+    background: white;
+    left: 3.25em;
+  }
