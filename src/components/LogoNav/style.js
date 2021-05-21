@@ -37,7 +37,10 @@ export const NavWrap = styled.nav`
 export const Link = styled.a`
     height: 100%;
     z-index: 3;
+    color: white;
     position: relative;
+    text-decoration: none;
+    text-align: center;
 `;
 export const Icon = styled.div`
     width: 50px;

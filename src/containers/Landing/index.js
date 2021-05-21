@@ -14,7 +14,7 @@ const Landing = () => {
             <LandingZone />
             {/* <About /> */}
             {/* <Portfolio /> */}
-            {/* <Contact /> */}
+            <Contact />
         </Mainwrap>
     )
 }
