@@ -27,7 +27,6 @@ const HtmlHead = () => (
         content="Réaliser un projet numerique, Créer un site web"
       />
       <link rel="icon" href="/webIcon.png" />
-      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
 
     </Head>
 )

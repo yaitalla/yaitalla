@@ -7,7 +7,7 @@ const BigButton = () => {
         <Wrap>
             <BtnFrame>
                 <Button>
-                    <A href={"https://yaitalla.github.io/Resume"} target={"_blank"}>Curriculum</A>
+                    <A rel="noreferrer" href={"https://yaitalla.github.io/Resume"} target={"_blank"}>Curriculum</A>
                 </Button>
             </BtnFrame>
         </Wrap>

@@ -7,7 +7,7 @@ const LandingZone = () => {
     return (
         <Section id="landingZone" >
             <BigButton />
-            <ScrollDown dest={'aboutSection'}/>
+            {/* <ScrollDown dest={'aboutSection'}/> */}
         </Section>
     )
 }

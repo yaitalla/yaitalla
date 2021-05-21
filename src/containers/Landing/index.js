@@ -12,9 +12,9 @@ const Landing = () => {
         <Mainwrap>
             <HtmlHead />
             <LandingZone />
-            <About />
-            <Portfolio />
-            <Contact />
+            {/* <About /> */}
+            {/* <Portfolio /> */}
+            {/* <Contact /> */}
         </Mainwrap>
     )
 }
