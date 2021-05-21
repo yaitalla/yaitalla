@@ -5,7 +5,7 @@ const ogURL = 'yaitalla.vercel.app/';
 
 const HtmlHead = () => (
     <Head>
-        <title>Yassine Aitalla Développeur Frontend</title>
+        <title>Yassine Aitalla</title>
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <meta charSet="utf-8" />
        <meta
