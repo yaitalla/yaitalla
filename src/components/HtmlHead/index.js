@@ -10,11 +10,11 @@ const HtmlHead = () => (
        <meta charSet="utf-8" />
        <meta
         name="description"
-        content="Yassine Aitalla Dev Frontend"
+        content="Yassine Aitalla"
       />
 
       <meta
-        content="ReactJS HTML CSS"
+        content="Développeur Frontend React JS "
         key="ogtitle"
         property="og:title"
       />
@@ -24,7 +24,7 @@ const HtmlHead = () => (
       <meta
         key="description"
         property="og:description"
-        content="Yassine Aitalla"
+        content="ReactJS HTML CSS"
       />
       <link rel="icon" href="/webIcon.png" />
 
