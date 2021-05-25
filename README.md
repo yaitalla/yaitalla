@@ -1,1 +1,1 @@
-offline
+[curriculum](https://yaitalla.vercel.app/)
